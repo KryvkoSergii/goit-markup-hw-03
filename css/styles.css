@@ -17,9 +17,39 @@ body {
     color: var(--primary-font-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.container {
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .header {
     background-color: var(--header-background);
     border: 1px solid var(--header-border);
+    max-width: 100%;
+}
+
+.header-element-container {
+    margin: 24px 156px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo-text {
@@ -44,6 +74,16 @@ body {
     color: var(--logo-text-color-light);
 }
 
+.header-navigation-wrapper {
+    display: flex;
+    gap: 76px;
+}
+
+.header-navigation {
+    display: flex;
+    gap: 40px;
+}
+
 .header-text {
     color: var(--primary-font-color);
     font-weight: 500;
@@ -66,8 +106,13 @@ body {
     color: var(--on-hover);
 }
 
+.address-container {
+    display: flex;
+    gap: 40px;
+}
+
 .list-item {
-    list-style-type: none
+    list-style-type: none;
 }
 
 .footer-text {
@@ -75,17 +120,40 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    margin-top: 16px;
 }
 
 .footer-card {
     background-color: var(--dark-background);
 }
 
+.footer-wrapper{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-left: 156px;
+    width: 264px;
+}
 
+.main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
 
 .banner {
     background-color: var(--dark-background);
-    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-wrapper {
+    max-width: 496px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding: 188px 0;
 }
 
 .banner-text {
@@ -109,14 +177,26 @@ body {
 }
 
 .main-order-service-btn:hover,
-.main-order-service-btn:active{
+.main-order-service-btn:active {
     background-color: var(--header-border);
     color: var(--logo-text-color-prefix);
     cursor: pointer;
 }
 
+.main-features-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-features {
+    display: flex;
+    gap: 24px;
+}
+
 .main-feature-item {
-    height: 104;
+    width: 264px;
 }
 
 .main-feature-title-text {
@@ -131,16 +211,62 @@ body {
     line-height: 24px;
 }
 
+.main-pictures-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+}
+
+.main-pictures-container {
+    display: flex;
+    gap: 24px;
+}
+
 .work-example-header {
     font-weight: 700;
     font-size: 36px;
     line-height: 40px;
 }
 
+.main-team-wrapper {
+border: red solid 1px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--footer-text-color);
+}
+
+.main-team-container {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-bottom: 120px;
+}
+
+.main-team-container .list-item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 4px 4px;
+    background-color: var(--header-background);
+    overflow: hidden;
+}
+
+.main-person-data {
+    margin: 32px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
 .our-team-header {
     font-weight: 700;
     font-size: 36px;
     line-height: 40px;
+
+    margin: 120px auto 72px auto;
 }
 
 .our-team-person-name {
@@ -157,6 +283,18 @@ body {
 
 
 
+.portfolio-navigation-container{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 96px auto 72px auto;
+}
+
+.portfolio-navigation-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .portfolio-navigation-btn {
     background-color: var(--header-border);
@@ -167,6 +305,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     text-align: center;
+    padding: 12px 24px;
 }
 
 .portfolio-navigation-btn:hover,
@@ -176,12 +315,33 @@ body {
     cursor: pointer;
 }
 
+.portfolio-cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    row-gap: 48px;
+    column-gap: 24px;
+}
+
+.portfolio-wrapper{
+    margin-bottom: 120px;
+}
+
 .card-pane {
     border: 1px solid var(--header-border);
     width: 360px;
     height: 420px;
 }
 
+.card-aware{
+    display: flex;
+    margin-top: 32px;
+    margin-left: 16px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 8px;
+}
 
 .card:link {
     text-decoration: none;
