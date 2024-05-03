@@ -35,9 +35,21 @@ ol {
     padding-left: 0;
 }
 
-.container {
+.global{
     margin: 0;
     box-sizing: border-box;
+    
+}
+
+.container {
+    width: 1158px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hidden{
+    display: none;
 }
 
 .header {
@@ -47,9 +59,10 @@ ol {
 }
 
 .header-element-container {
-    margin: 24px 156px;
     display: flex;
     justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .logo-text {
@@ -121,6 +134,7 @@ ol {
     font-size: 16px;
     line-height: 24px;
     margin-top: 16px;
+    max-width: 264px;
 }
 
 .footer-card {
@@ -130,21 +144,12 @@ ol {
 .footer-wrapper{
     padding-top: 100px;
     padding-bottom: 100px;
-    margin-left: 156px;
-    width: 264px;
-}
-
-.main-content{
-    display: flex;
-    flex-direction: column;
-    gap: 120px;
 }
 
 .banner {
     background-color: var(--dark-background);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .banner-wrapper {
@@ -153,7 +158,8 @@ ol {
     flex-direction: column;
     align-items: center;
     gap: 48px;
-    padding: 188px 0;
+    margin-left: auto;
+margin-right: auto;
 }
 
 .banner-text {
@@ -188,6 +194,8 @@ ol {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 120px;
+    padding-top: 120px;
 }
 
 .main-features {
@@ -211,68 +219,56 @@ ol {
     line-height: 24px;
 }
 
-.main-pictures-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 72px;
-}
-
 .main-pictures-container {
     display: flex;
     gap: 24px;
+    padding-bottom: 120px;
 }
 
 .work-example-header {
     font-weight: 700;
     font-size: 36px;
     line-height: 40px;
+    margin-bottom: 72px;
+    text-align: center;
 }
 
 .main-team-wrapper {
-border: red solid 1px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: var(--footer-text-color);
+    padding-bottom: 120px;
+    padding-top: 120px;
 }
 
 .main-team-container {
     display: flex;
-    flex-direction: row;
     gap: 24px;
-    margin-bottom: 120px;
+    justify-content: center;
+    width: calc(4 * 264px + 3 * 24px);
 }
 
 .main-team-container .list-item {
-    display: flex;
-    flex-direction: column;
     border-radius: 0 0 4px 4px;
     background-color: var(--header-background);
-    overflow: hidden;
 }
 
 .main-person-data {
-    margin: 32px 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
+    padding: 32px 16px;
+    text-align: center;
 }
 
 .our-team-header {
     font-weight: 700;
     font-size: 36px;
     line-height: 40px;
-
-    margin: 120px auto 72px auto;
+    padding-bottom: 72px;
+    text-align: center;
 }
 
 .our-team-person-name {
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
+    padding-bottom: 8px;
 }
 
 .our-team-person-position {
@@ -287,13 +283,9 @@ border: red solid 1px;
     display: flex;
     align-items: center;
     gap: 24px;
-    margin: 96px auto 72px auto;
-}
-
-.portfolio-navigation-wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-bottom: 72px;
+    justify-content: center;
+    border: red solid 1px;
 }
 
 .portfolio-navigation-btn {
@@ -325,22 +317,19 @@ border: red solid 1px;
 }
 
 .portfolio-wrapper{
-    margin-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 120px;
 }
 
-.card-pane {
-    border: 1px solid var(--header-border);
-    width: 360px;
-    height: 420px;
+
+.card-container{
+    border-bottom: 1px solid var(--header-border);
+    border-left: 1px solid var(--header-border);
+    border-right: 1px solid var(--header-border);
 }
 
 .card-aware{
-    display: flex;
-    margin-top: 32px;
-    margin-left: 16px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 8px;
+    padding: 32px 16px;
 }
 
 .card:link {
