@@ -277,15 +277,12 @@ margin-right: auto;
     line-height: 24px;
 }
 
-
-
 .portfolio-navigation-container{
     display: flex;
     align-items: center;
     gap: 24px;
     margin-bottom: 72px;
     justify-content: center;
-    border: red solid 1px;
 }
 
 .portfolio-navigation-btn {
